@@ -1,0 +1,19 @@
+body{
+  margin-top: 50px;
+}
+
+.loading{
+  background: url('../../images/loading.svg') 50% 50% no-repeat #FFF;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.ion-link{
+  font-size: 1.5em;
+  font-weight: lighter; 
+}
