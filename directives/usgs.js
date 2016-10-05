@@ -11,14 +11,14 @@ app.directive('usgsComponent', function($http){
         $http.get(baseUrl + $scope.baseSrc + baseExt).then(
           function(response){
             $scope.data = response.data;
-            console.log(response);
           },
           function(error){
             console.log(error);
+            $scope.data = false;
           }
         );
       };
-      
+
       $scope.sortBy = function(propertyName) {
         $scope.reverse = ($scope.propertyName === propertyName) ? !$scope.reverse : false;
         $scope.propertyName = propertyName;
